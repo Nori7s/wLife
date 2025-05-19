@@ -14,3 +14,4 @@ print(reverse_string("hello"))  # 正しく動くが非効率
 print("hello")  # テスト用
 print("hello")  # テスト用２
 print("hello")  # テスト用３
+print("hello")  # テスト用４　Charged
