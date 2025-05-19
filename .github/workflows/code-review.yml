@@ -8,22 +8,21 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        name: Checkout code
-        uses: actions/checkout@v3
+        - name: Checkout code
+          uses: actions/checkout@v3
 
-        name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+        - name: Setup Node.js
+          uses: actions/setup-node@v3
+          with:
+            node-version: '18'
 
-        name: Install dependencies
-        run: npm install
+        - name: Install dependencies
+          run: npm install
 
 
-        name: Run code review script
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-
-        run: |
-         node reiew.js
+        - name: Run code review script
+          env:
+            GITHUB_TOKEN: ${{ secrets.ACTION_TOKEN }}
+            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          run: |
+            node reiew.js
