@@ -87,4 +87,4 @@ jobs:
           PR_CODE_SUGGESTIONS.NUM_CODE_SUGGESTIONS: 2
 
           # Modelを変更
-          CONFIG.MODEL: gpt-4-1106-preview
+          CONFIG.MODEL: gpt-4.1-mini
