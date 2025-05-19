@@ -10,3 +10,5 @@ def reverse_string(s):
 
 print(calculate_area(5))  # エラーが発生する
 print(reverse_string("hello"))  # 正しく動くが非効率
+
+print("hello")  # テスト用
